@@ -1,0 +1,44 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.clock{
+    width: 35%;
+    font-size: 3rem;
+    text-align: center;
+    margin-top: 10rem;
+    font-family: Arial, Helvetica, sans-serif;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.clock span{
+    padding: 2rem;
+    background: #2A0944;
+    color: #FEC260;
+}
+
+@media only screen and (max-width: 1000px){
+    .clock{
+        font-size: 2rem;
+    }
+}
+
+@media only screen and (max-width: 600px){
+    .clock{
+        width: 80%;
+        font-size: 1.5rem;
+    }
+    .clock span{
+        padding: 1.5rem;
+    }
+}
